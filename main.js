@@ -1,3 +1,6 @@
+//make so index is argument
+
+
 var ul = document.body.getElementsByTagName("ul");
 var targetLi = document.getElementsByTagName("li");
 
@@ -10,6 +13,13 @@ function createNewElement(type, amount, location){
 }
 createNewElement("ul", 1, document.body);
 createNewElement("li", 4, ul[0]);
+
+//from pete and patricks work, partially done
+// function createAndAppend(appendTo, indexOfParent, element, string) {
+//   var parent = document.getElementsByTagName(appendTo);
+//   var item = document.createElement(element);
+//   item.innerHTML
+// }
 
 //changes the text inside a targeted element
 function changeInnerText(targetElement, text){
